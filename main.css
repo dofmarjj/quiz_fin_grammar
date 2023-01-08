@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-size: inherit;
+	/* font-size: inherit; */
 }
 
 h2 {
@@ -15,13 +15,11 @@ h2 {
 }
 
 span {
-	font-size: 1.5em;
+	font-size: 15px;
 }
 
 body {
 	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	line-height: 1.7;
 	background: var(--bg-color);
 	color: var(--text-color);
 }
@@ -34,31 +32,11 @@ body {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	/* margin-top: 20px; */
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
-	.container {
-		width: 480px;
-		height: 100%;
 
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.container {
-		width: 768px;
-		height: 100%;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.container {
-		width: 1200px;
-	}
-}
 
 .title-block {
 	display: flex;
@@ -69,7 +47,7 @@ body {
 
 .ts__start-img {
 	display: block;
-	max-width: 350px;
+	max-width: 180px;
 	min-height: 100%;
 	margin: 0 auto;
 
@@ -78,10 +56,8 @@ body {
 .main-title {
 	color: var(--text-color);
 	font-weight: 400;
-	font-size: 65px;
 	line-height: 1.2;
 	margin: 30px 0;
-	;
 }
 
 .main-btn {
@@ -92,8 +68,8 @@ body {
 	align-items: center;
 	position: relative;
 	text-decoration: none;
-	max-width: 250px;
-	padding: 0 200px;
+	/* max-width: 250px; */
+	/* padding: 0 200px; */
 	height: 65px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -136,7 +112,7 @@ body {
 }
 
 .title {
-	font-size: 2em;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.6;
 	padding: 1rem 0;
@@ -151,7 +127,7 @@ body {
 }
 
 .quiz-list li {
-	font-size: 1.2rem;
+	font-size: 15px;
 }
 
 .quiz-list label {
@@ -188,7 +164,7 @@ body {
 	align-items: center;
 	text-decoration: none;
 	max-width: 250px;
-	padding: 0 200px;
+	padding: 0 100px;
 	min-height: 65px;
 	border-radius: 5px;
 	font-size: 18px;
@@ -208,4 +184,115 @@ body {
 .submit:focus {
 	border: 3px solid white;
 	background-color: #c398bc3d;
+}
+
+
+@media screen and (min-width: 320px) {
+	.container {
+		width: 320px;
+		height: 100%;
+
+	}
+
+	.main-title {
+		font-size: 25px;
+		text-align: center
+	}
+
+	.main-btn {
+		padding: 0 120px;
+		max-width: 200px;
+	}
+
+}
+
+@media screen and (min-width: 480px) {
+
+	span {
+		font-size: 20px;
+	}
+
+	.container {
+		width: 480px;
+		height: 100%;
+
+	}
+
+	.ts__start-img {
+		max-width: 200px;
+	}
+
+	.main-title {
+		font-size: 30px;
+		text-align: center
+	}
+
+	.main-btn {
+		padding: 0 150px;
+		max-width: 200px;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.submit {
+		padding: 0 150px;
+	}
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+	span {
+		font-size: 30px;
+	}
+
+	.container {
+		width: 768px;
+		height: 100%;
+	}
+
+	.ts__start-img {
+		max-width: 250px;
+	}
+
+	.main-title {
+		font-size: 45px;
+		text-align: center
+	}
+
+	.main-btn {
+		padding: 0 200px;
+		max-width: 250px;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	.submit {
+		padding: 0 200px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.container {
+		width: 1200px;
+	}
+
+	.ts__start-img {
+		max-width: 300px;
+	}
+
+	.main-title {
+		font-size: 65px;
+	}
+
+	.main-btn {
+		padding: 0 200px;
+		max-width: 250px;
+	}
 }
