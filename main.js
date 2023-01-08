@@ -203,7 +203,7 @@ function showResults() {
   // let title, messege;
 
   let result = `Правильных ответов ${
-    Math.floor(Math.random() * (16 - 8)) + 8
+    Math.floor(Math.random() * (15 - 8)) + 8
   } из ${questions.length}`;
 
   const finalMessage = resultsTemplate.replace("%title%", result);
